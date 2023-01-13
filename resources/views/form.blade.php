@@ -44,17 +44,17 @@
 
 <div class="form-body on-top-mobile">
     <div class="row">
-        <div style="background-color: #f8f9fa;" class="img-holder">
+        <div style="background-color: #fff;" class="img-holder">
             <div class="bg"></div>
             <div class="info-holder simple-info">
                 <div><img src="{{asset('images/logo1.png')}}" alt=""><img src="{{asset('images/logo2.png')}}" alt=""></div>
-                <div><h3>Cadastre-se em nossa plataforma!</h3></div>
-                <div><p>Preencha seus dados aqui e receba <br>seu código de acesso à plataforma.</p></div><br>
+                <div><h3 style="color: black;">Cadastre-se em nossa plataforma!</h3></div>
+                <div><p style="color: black;">Preencha seus dados aqui e receba <br>seu código de acesso à plataforma.</p></div><br>
                 <div><img src="{{asset('images/cubo.png')}}" alt=""></div>
             </div>
         </div>
         <div class="form-holder">
-            <div class="form-content">
+            <div style="background-color: #57D38C" class="form-content">
                 <div class="form-items">
                     <form method="POST" action="{{route('store.lead')}}">
                         @csrf
