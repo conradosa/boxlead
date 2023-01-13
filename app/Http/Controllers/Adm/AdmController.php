@@ -8,12 +8,12 @@ use App\Models\Lead;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\RateLimiter;
-use Maatwebsite\Excel\Facades\Excel;
+
+use Rap2hpoutre\FastExcel\FastExcel;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
+use Symfony\Component\HttpFoundation\StreamedResponse;
 
 class AdmController extends Controller
 {
@@ -48,8 +48,8 @@ class AdmController extends Controller
         }
     }
 
-    public function generate(): BinaryFileResponse
+    public function generate(): string|StreamedResponse
     {
-        return Excel::download(new LeadsExport, 'leads.xlsx');
+        return (new FastExcel(Lead::all()))->download('leads.xlsx');
     }
 }
