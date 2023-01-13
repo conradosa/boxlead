@@ -49,12 +49,11 @@
             <div class="info-holder simple-info">
                 <div><img src="{{asset('images/logo1.png')}}" alt=""><img src="{{asset('images/logo2.png')}}" alt=""></div>
                 <div><h3 style="color: black;">Cadastre-se em nossa plataforma!</h3></div>
-                <div><p style="color: black;">Preencha seus dados aqui e receba <br>seu código de acesso à plataforma.</p></div><br>
-                <div><img src="{{asset('images/cubo.png')}}" alt=""></div>
+                <div><p style="color: black;">Preencha seus dados aqui e receba <br>seu código de acesso à plataforma.</p></div>
             </div>
         </div>
         <div class="form-holder">
-            <div style="background-color: #f8f9fa" class="form-content">
+            <div style="background-color: #f8f8f8" class="form-content">
                 <div class="form-items">
                     <form method="POST" action="{{route('store.lead')}}">
                         @csrf
@@ -89,6 +88,13 @@
                                 <div class="form-button">
                                     <button id="submit" type="submit" class="ibtn">Enviar Dados</button>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <center>
+                                <img src="{{asset('images/logobox.png')}}" alt="">
+                                </center>
                             </div>
                         </div>
                     </form>
