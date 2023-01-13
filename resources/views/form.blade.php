@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="form-holder">
-            <div style="background-color: #57D38C" class="form-content">
+            <div style="background-color: #f8f9fa" class="form-content">
                 <div class="form-items">
                     <form method="POST" action="{{route('store.lead')}}">
                         @csrf
