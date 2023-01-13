@@ -89,7 +89,7 @@
                                     <button id="submit" type="submit" class="ibtn">Enviar Dados</button>
                                 </div>
                             </div>
-                        </div>
+                        </div><br>
                         <div class="row">
                             <div class="col-12">
                                 <center>
