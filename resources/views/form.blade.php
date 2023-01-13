@@ -44,7 +44,7 @@
 
 <div class="form-body on-top-mobile">
     <div class="row">
-        <div style="background-color: #20c997;" class="img-holder">
+        <div style="background-color: #f8f9fa;" class="img-holder">
             <div class="bg"></div>
             <div class="info-holder simple-info">
                 <div><img src="{{asset('images/logo1.png')}}" alt=""><img src="{{asset('images/logo2.png')}}" alt=""></div>
