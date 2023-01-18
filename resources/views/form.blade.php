@@ -47,7 +47,7 @@
         <div style="background-color: #fff;" class="img-holder">
             <div class="bg"></div>
             <div class="info-holder simple-info">
-                <div><img src="{{asset('images/logo1.png')}}" alt=""><img class="ml-md-3" src="{{asset('images/logo2.png')}}" alt=""></div>
+                <div><img src="{{asset('images/logo1.png')}}" alt=""><img class="ml-md-3" src="{{asset('images/logo2_n.png')}}" alt=""></div>
                 <div><h3 style="color: black;">Cadastre-se em nossa plataforma!</h3></div>
                 <div><p style="color: black;">Preencha seus dados aqui e receba <br>seu código de acesso à plataforma.</p></div>
             </div>
