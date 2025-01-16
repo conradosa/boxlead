@@ -17,12 +17,12 @@ class CadastroController extends Controller
     {
         $request->validate([
             'nome' => ['required', 'string', 'max:255'],
-            'empresa' => ['required', 'string', 'max:255'],
-            'cargo' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:leads'],
             'telefone' => ['required', 'string', 'max:255', 'celular_com_ddd'],
+            'cargo' => ['required', 'string', 'max:255']
         ]);
 
+        /*
         $token = Encoding::hexEncode(random_bytes(9));
 
         if(Lead::where('codigo', $token)->first()) {
@@ -30,14 +30,13 @@ class CadastroController extends Controller
                 $token = Encoding::hexEncode(random_bytes(9));
             }
         }
+        */
 
         $lead = Lead::create([
             'nome' => $request->nome,
-            'empresa' => $request->empresa,
-            'cargo' => $request->cargo,
             'email' => $request->email,
             'telefone' => $request->telefone,
-            'codigo' => $token
+            'cargo' => $request->cargo
         ]);
 
         return view('success',[

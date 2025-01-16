@@ -17,11 +17,11 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('nome');
-            $table->string('empresa');
+            //$table->string('empresa');
             $table->string('cargo');
             $table->string('email')->unique();
             $table->string('telefone');
-            $table->string('codigo')->unique();
+            //$table->string('codigo')->unique();
         });
     }
 

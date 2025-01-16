@@ -16,20 +16,15 @@ class Lead extends Model
      */
     protected $fillable = [
         'nome',
-        'empresa',
-        'cargo',
         'email',
         'telefone',
-        'codigo'
+        'cargo'
     ];
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
+    /*
     protected $hidden = [
         'codigo',
     ];
+    */
 
 }

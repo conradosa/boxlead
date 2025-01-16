@@ -17,8 +17,7 @@
             <div class="form-content" style="background-color: #20c997">
                 <div class="form-items">
                     <h3>Sucesso!</h3>
-                    <p>Aqui está seu código para o acesso na plataforma:</p>
-                    <h3 style="font-size: 25px"><strong>{{$lead->codigo}}</strong></h3><br>
+                    <p>Seus dados foram cadastrados!</p>
                     <p>Aproveite o evento!</p>
                 </div>
             </div>

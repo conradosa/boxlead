@@ -48,45 +48,64 @@
             <div class="bg"></div>
             <div class="info-holder simple-info">
                 <div><img src="{{asset('images/logo1.png')}}" alt=""><img class="ml-md-3" src="{{asset('images/logo2_n.png')}}" alt=""></div>
+                <!--
                 <div><h3 style="color: black;">Cadastre-se em nossa plataforma!</h3></div>
                 <div><p style="color: black;">Preencha seus dados aqui e receba <br>seu código de acesso à plataforma.</p></div>
+                -->
             </div>
         </div>
         <div class="form-holder">
-            <div style="background-color: #f8f8f8" class="form-content">
+            <div style="background-color: #B5CCB5" class="form-content">
                 <div class="form-items">
-                    <form method="POST" action="{{route('store.lead')}}">
+                    <form method="POST" class="bg-white p-4 rounded" action="{{route('store.lead')}}">
                         @csrf
                         <div class="row">
                             <div class="col-12">
-                                <label for="nome">Nome:</label>
+                                <label for="nome"><b>Nome:</b></label>
                                 <input required id="nome" value="{{old('nome')}}" name="nome" type="text" class="form-control" placeholder="Digite seu nome completo">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 col-sm-6">
-                                <label for="empresa">Empresa:</label>
-                                <input required id="empresa" value="{{old('empresa')}}" name="empresa" type="text" class="form-control" placeholder="Digite o nome de sua empresa">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <label for="cargo">Cargo:</label>
-                                <input required id="cargo" value="{{old('cargo')}}" name="cargo" type="text" class="form-control" placeholder="Digite o seu cargo">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-sm-6">
-                                <label for="email">E-mail:</label>
-                                <input required id="email" value="{{old('email')}}" name="email" type="email" class="form-control" placeholder="Digite seu e-mail">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <label for="telefone">Telefone:</label>
+                            <div class="col-12">
+                                <label for="telefone"><b>Telefone:</b></label>
                                 <input required id="telefone" value="{{old('telefone')}}" name="telefone" type="text" data-mask="(00)99999-9999" class="form-control" placeholder="(DDD)99999-9999">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
+                                <label for="email"><b>E-mail:</b></label>
+                                <input required id="email" value="{{old('email')}}" name="email" type="email" class="form-control" placeholder="Digite seu e-mail">
+                            </div>
+                        </div>
+                        <!--
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <label for="empresa">Empresa:</label>
+                                <input required id="empresa" value="" name="empresa" type="text" class="form-control" placeholder="Digite o nome de sua empresa">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label for="cargo">Cargo:</label>
+                                <input required id="cargo" value="" name="cargo" type="text" class="form-control" placeholder="Digite o seu cargo">
+                            </div>
+                        </div>
+                        -->
+                        <div class="row">
+                            <div class="col-12">
+                                <label><b>Você é:</b></label><br>
+                                <input class="form-control" type="radio" id="estudante" name="cargo" value="Estudante">
+                                <label for="estudante">Estudante</label><br>
+                                <input class="form-control" type="radio" id="produtor" name="cargo" value="Produtor">
+                                <label for="produtor">Produtor</label><br>
+                                <input class="form-control" type="radio" id="visitante" name="cargo" value="Visitante">
+                                <label for="visitante">Visitante</label><br>
+                                <input class="form-control" type="radio" id="comercial" name="cargo" value="Comercial">
+                                <label for="comercial">Comercial</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
                                 <div class="form-button">
-                                    <button id="submit" type="submit" class="ibtn">Enviar Dados</button>
+                                    <button style="background-color: green; color: white" id="submit" type="submit" class="ibtn">Enviar</button>
                                 </div>
                             </div>
                         </div><br>
